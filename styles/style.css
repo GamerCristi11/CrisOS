@@ -1,0 +1,30 @@
+body {
+    background-image: url('/media/imgs/background.jpg');
+    background-size:cover
+}
+
+.c1 {
+    border: solid;
+    width: 128px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    border: solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.top p {
+    margin-left: 16px;
+    margin-right: 16px;
+}
