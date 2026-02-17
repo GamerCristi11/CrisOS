@@ -16,14 +16,43 @@
             <p>Welcome</p>
             <p style="cursor: pointer" id="welcomeclose">Close</p>
             </div>
-            <p>Welcome to CrisOS! Test text!</p>
+            <p>Welcome to CrisOS! Check out the apps from the bottom bar.</p>
         </div>
         <!--END WELCOME-->
+
+        <!--LINKS-->
+        <div class="window" id="links" style="display: none;">
+            <div id="linksheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Links</p>
+            <p style="cursor: pointer" id="linksclose">Close</p>
+            </div>
+            <ul>
+                <li><a href="https://code2craft.xyz" target="_blank">My Website</a></li>
+                <li><a href="https://github.com/GamerCristi11" target="_blank">My GitHub</a></li>
+            </ul>
+        </div>
+        <!--END LINKS-->
+
+        <!--SETTINGS-->
+        <div class="window" id="settings" style="display: none;">
+            <div id="settingsheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Settings</p>
+            <p style="cursor: pointer" id="settingsclose">Close</p>
+            </div>
+            <h2>Background img:</h2>
+            <ul>
+                <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/background.jpg)';">Cats</a></li>
+                <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/backgroundt1.png)';">Test1</a></li>
+            </ul>
+        </div>
+        <!--END SETTINGS-->
         <!--END APPS-->
         <div class="bottom">
             <p style="cursor: pointer" id="welcomeopen">Welcome App</p>
+            <p style="cursor: pointer" id="linksopen">Links</p>
+            <p style="cursor: pointer" id="settingsopen">Settings</p>
         </div>
-        <script src="/js/windows/welcome.js"></script>
+        <script src="/js/drag.js"></script>
         <script src="/js/time.js"></script>
     </body>
 </html>
