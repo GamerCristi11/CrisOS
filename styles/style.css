@@ -28,16 +28,22 @@ body {
     background-size:cover
 }
 
-.c1 {
+.window {
     border: solid;
-    width: 128px;
-    padding: 20px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
     border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
     background-color: white;
+}
+
+.wheader {
+    cursor: move;
+    border-bottom: solid 2px #ccc;
 }
 
 .top {
@@ -52,4 +58,14 @@ body {
 .top p {
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.bottom {
+    backdrop-filter: blur(10px);
+    border: solid;
+    border-radius: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

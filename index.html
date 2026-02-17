@@ -8,10 +8,22 @@
         <div class="top">
             <p>CrisOS</p>
             <p id="time-top">Time and Date</p>
-            <script src="/js/time.js"></script>
         </div>
-        <div class="c1">
+        <!--APPS-->
+        <!--WELCOME-->
+        <div class="window" id="welcome">
+            <div id="welcomeheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Welcome</p>
+            <p style="cursor: pointer" id="welcomeclose">Close</p>
+            </div>
             <p>Welcome to CrisOS! Test text!</p>
         </div>
+        <!--END WELCOME-->
+        <!--END APPS-->
+        <div class="bottom">
+            <p style="cursor: pointer" id="welcomeopen">Welcome App</p>
+        </div>
+        <script src="/js/windows/welcome.js"></script>
+        <script src="/js/time.js"></script>
     </body>
 </html>
