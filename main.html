@@ -14,7 +14,7 @@
         <!--WELCOME-->
         <div class="window" id="welcome">
             <div id="welcomeheader" class="wheader" style="display: flex; justify-content: space-between;">
-            <p>Welcome</p>
+            <p><img src="/media/imgs/apps/welcome.png" height="20px" width="auto"> Welcome</p>
             <p style="cursor: pointer" id="welcomeclose">Close</p>
             </div>
             <p>Welcome to CrisOS! Check out the apps from the bottom bar.</p>
@@ -25,7 +25,7 @@
         <!--LINKS-->
         <div class="window" id="links" style="display: none;">
             <div id="linksheader" class="wheader" style="display: flex; justify-content: space-between;">
-            <p>Links</p>
+            <p><img src="/media/imgs/apps/links.png" height="20px" width="auto"> Links</p>
             <p style="cursor: pointer" id="linksclose">Close</p>
             </div>
             <ul>
@@ -38,25 +38,41 @@
         <!--SETTINGS-->
         <div class="window" id="settings" style="display: none;">
             <div id="settingsheader" class="wheader" style="display: flex; justify-content: space-between;">
-            <p>Settings</p>
+            <p><img src="/media/imgs/apps/settings.png" height="20px" width="auto"> Settings</p>
             <p style="cursor: pointer" id="settingsclose">Close</p>
             </div>
-            <h2>Background img:</h2>
+            <h2>Background image:</h2>
             <ul>
                 <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/background.jpg)';">Cats</a></li>
                 <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/backgroundt1.png)';">Test1</a></li>
             </ul>
         </div>
         <!--END SETTINGS-->
+        <!--ABOUT ME-->
+        <div class="window" id="aboutme" style="display: none;">
+            <div id="aboutmeheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p><img src="/media/imgs/apps/about.png" height="20px" width="auto"> About Me</p>
+            <p style="cursor: pointer" id="aboutmeclose">Close</p>
+            </div>
+            <p>Hello, I'm Cris, also known as Code2Craft and I'm a teen wanna-be developer from Romania. I made this website mostly for fun but also a bit for <a href="https://flavortown.hackclub.com" target="_blank">HackClub Flavorown</a>.</p>
+            <p>You can contact me through:</p>
+            <ul>
+                <li><a href="mailto:itsme@code2craft.xyz">Email: itsme [at] code2craft [dot] xyz</a></li>
+                <li><a href="https://discord.com/users/920617892444258305" target="_blank">Discord: Cris(@cris.c2c)</a></li>
+                <li>SHARP: code2craft#twoblade.com (Mainly through <a href="https://twoblade.com" target="_blank">twoblade.com</a> but any SHRAP clients work I think</li>
+            </ul>
+        </div>
+        <!--END ABOUT ME-->
         <!--END APPS-->
         <div class="bottom">
             <div class="apps">
-                <p style="cursor: pointer" id="welcomeopen">Welcome App</p>
-                <p style="cursor: pointer" id="linksopen">Links</p>
-                <p style="cursor: pointer" id="settingsopen">Settings</p>
+                <p style="cursor: pointer" id="welcomeopen"><img src="/media/imgs/apps/welcome.png" height="32px" width="auto"></p>
+                <p style="cursor: pointer" id="linksopen"><img src="/media/imgs/apps/links.png" height="32px" width="auto"></p>
+                <p style="cursor: pointer" id="settingsopen"><img src="/media/imgs/apps/settings.png" height="32px" width="auto"></p>
+                <p style="cursor: pointer" id="aboutmeopen"><img src="/media/imgs/apps/about.png" height="32px" width="auto"></p>
             </div>
             <div class="system">
-                <a href="/">Log Out</a>
+                <a href="/"><img src="/media/imgs/apps/logout.png" height="32px" width="auto"></a>
             </div>
         </div>
         <script src="/js/drag.js"></script>

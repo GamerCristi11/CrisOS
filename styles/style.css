@@ -9,7 +9,7 @@
   font-display: swap;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,p,li {
     font-family: Phantom Sans;
 }
 
@@ -25,12 +25,15 @@ a:hover {
 
 body {
     background-image: url('/media/imgs/background.jpg');
-    background-size:cover
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .window {
     border: solid;
-    width: 300px;
+    min-width: 300px;
+    max-width: 600px;
     height: auto;
     padding: 10px;
     border-radius: 10px;
@@ -44,6 +47,7 @@ body {
 .wheader {
     cursor: move;
     border-bottom: solid 2px #ccc;
+    height: 40px;
 }
 
 .top {

@@ -33,7 +33,7 @@ function start(winid) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
-    
+     
     if (header) {
         header.onmousedown = startDragging;
     } else {
@@ -47,3 +47,4 @@ function start(winid) {
 start("welcome");
 start("links");
 start("settings");
+start("aboutme");
