@@ -88,3 +88,29 @@ body {
     display: flex;
     margin-right: 10px;
 }
+
+.app {
+    display: flex;
+    flex-direction: column; 
+}
+
+.app p {
+    margin: 0;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.rotate404 {
+    display: inline-block;
+    animation:spin 1.5s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform:rotate(0)
+    }
+    to
+    {
+        transform:rotate(360deg)
+    }
+}

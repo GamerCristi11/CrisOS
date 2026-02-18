@@ -3,6 +3,10 @@
     <head>
         <title>CrisOS</title>
         <link rel="stylesheet" type="text/css" href="/styles/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noai, noimageai">
+        <link href="/media/img/icon.png" rel="icon" type="image/x-icon">
     </head>
     <body>
         <audio id="BootAudio" src="/media/audio/boot.wav"></audio> <!--BOOT AUDIO-->
@@ -66,10 +70,22 @@
         <!--END APPS-->
         <div class="bottom">
             <div class="apps">
-                <p style="cursor: pointer" id="welcomeopen"><img src="/media/imgs/apps/welcome.png" height="32px" width="auto"></p>
-                <p style="cursor: pointer" id="linksopen"><img src="/media/imgs/apps/links.png" height="32px" width="auto"></p>
-                <p style="cursor: pointer" id="settingsopen"><img src="/media/imgs/apps/settings.png" height="32px" width="auto"></p>
-                <p style="cursor: pointer" id="aboutmeopen"><img src="/media/imgs/apps/about.png" height="32px" width="auto"></p>
+                <div class="app">
+                    <p style="cursor: pointer" id="welcomeopen"><img src="/media/imgs/apps/welcome.png" height="32px" width="auto"></p>
+                    <p>Welcome</p>
+                </div>
+                <div class="app">
+                    <p style="cursor: pointer" id="linksopen"><img src="/media/imgs/apps/links.png" height="32px" width="auto"></p>
+                    <p>Links</p>
+                </div>
+                <div class="app">
+                    <p style="cursor: pointer" id="settingsopen"><img src="/media/imgs/apps/settings.png" height="32px" width="auto"></p>
+                    <p>Settings</p>
+                </div>
+                <div class="app">
+                    <p style="cursor: pointer" id="aboutmeopen"><img src="/media/imgs/apps/about.png" height="32px" width="auto"></p>
+                    <p>About Me</p>
+                </div>
             </div>
             <div class="system">
                 <a href="/"><img src="/media/imgs/apps/logout.png" height="32px" width="auto"></a>
