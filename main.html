@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CrisOS</title>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    </head>
+    <body>
+        <audio id="BootAudio" src="/media/audio/boot.wav"></audio> <!--BOOT AUDIO-->
+        <div class="top">
+            <p>CrisOS</p>
+            <p id="time-top">Time and Date</p>
+        </div>
+        <!--APPS-->
+        <!--WELCOME-->
+        <div class="window" id="welcome">
+            <div id="welcomeheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Welcome</p>
+            <p style="cursor: pointer" id="welcomeclose">Close</p>
+            </div>
+            <p>Welcome to CrisOS! Check out the apps from the bottom bar.</p>
+            <a onclick="welcomenot()" style="color: blue; cursor: pointer;">Don't show again on boot</a>
+        </div>
+        <!--END WELCOME-->
+
+        <!--LINKS-->
+        <div class="window" id="links" style="display: none;">
+            <div id="linksheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Links</p>
+            <p style="cursor: pointer" id="linksclose">Close</p>
+            </div>
+            <ul>
+                <li><a href="https://code2craft.xyz" target="_blank">My Website</a></li>
+                <li><a href="https://github.com/GamerCristi11" target="_blank">My GitHub</a></li>
+            </ul>
+        </div>
+        <!--END LINKS-->
+
+        <!--SETTINGS-->
+        <div class="window" id="settings" style="display: none;">
+            <div id="settingsheader" class="wheader" style="display: flex; justify-content: space-between;">
+            <p>Settings</p>
+            <p style="cursor: pointer" id="settingsclose">Close</p>
+            </div>
+            <h2>Background img:</h2>
+            <ul>
+                <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/background.jpg)';">Cats</a></li>
+                <li><a onclick="body.style.backgroundImage = 'url(/media/imgs/backgroundt1.png)';">Test1</a></li>
+            </ul>
+        </div>
+        <!--END SETTINGS-->
+        <!--END APPS-->
+        <div class="bottom">
+            <div class="apps">
+                <p style="cursor: pointer" id="welcomeopen">Welcome App</p>
+                <p style="cursor: pointer" id="linksopen">Links</p>
+                <p style="cursor: pointer" id="settingsopen">Settings</p>
+            </div>
+            <div class="system">
+                <a href="/">Log Out</a>
+            </div>
+        </div>
+        <script src="/js/drag.js"></script>
+        <script src="/js/time.js"></script>
+        <script src="/js/boot.js"></script>
+    </body>
+</html>

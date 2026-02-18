@@ -69,8 +69,18 @@ body {
     bottom: 0;
     left: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .bottom p {
     margin: 10px;
+}
+
+.apps {
+    display: flex;
+}
+
+.system {
+    display: flex;
+    margin-right: 10px;
 }
