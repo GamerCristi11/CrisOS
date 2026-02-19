@@ -1,21 +1,12 @@
-@font-face {
-  font-family: 'Phantom Sans';
-  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
-      format('woff'),
-    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
-      format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 h1,h2,h3,h4,h5,p,li {
-    font-family: Phantom Sans;
+    font-family: DM Sans;
 }
 
 a { 
     margin-top:10px;
-    font-family: Phantom Sans;
+    font-family: DM Sans;
     text-decoration: none;
 }
 
